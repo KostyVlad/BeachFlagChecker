@@ -32,11 +32,11 @@ async function getForecast() {
             tochen += '<img src="./pic/white.png " width="100">';
 
         }
-        if (waveHeight > 0.60 && waveHeight < 1.20) {
+        else if (waveHeight > 0.60 && waveHeight < 1.20) {
             tochen += "Red flag ,danger to swim <br>";
             tochen += "דגל אדום ים סוער<br>";
             tochen += '<img src="./pic/red.png " width="100">';
-        } if (waveHeight > 1.30) {
+        } else (waveHeight > 1.30) {
             tochen += "Black flag,forbidden to swim";
             tochen += '<img src="./pic/blackFlag.png " width="100">';
         }
@@ -76,12 +76,18 @@ async function getForecast2() {
             tochen += '<img src="./pic/white_flag..avif" alt="White Flag" width="100">';
 
         }
+        if (waveHeight < 0.60) {
+            tochen += "White flag,you can swim <br>"
+            tochen += '<img src="./pic/white.png " width="100">';
+
+        }
         if (waveHeight > 0.60 && waveHeight < 1.20) {
             tochen += "Red flag ,danger to swim <br>";
             tochen += "דגל אדום ים סוער<br>";
-              tochen += '<img src="./pic/red.png " width="100">';
-        } if (waveHeight > 1.30) {
+            tochen += '<img src="./pic/red.png " width="100">';
+        } if (waveHeight > 1.20) {
             tochen += "Black flag,forbidden to swim";
+            tochen += '<img src="./pic/blackFlag.png " width="100">';
         }
 
         tochen += "</div>";
@@ -94,5 +100,6 @@ async function getForecast2() {
     }
 }
  */
+
 
 
